@@ -9,7 +9,7 @@ Spark Practicals
 
 This is somewhat lenghty setup process need to install python2.7 on CentoOS.
 
-Sudo to the root
+Sudo to the root:
 
 	sudo su -
 
@@ -46,7 +46,7 @@ EXIT root mode:
 _Pause and make sure you are not longer root user._
 
 
-Create and activate python virtual environment named `pyspark`
+Create and activate python virtual environment named `pyspark`:
 
    	virtualenv pyspark
    	source ~/pyspark/bin/activate
