@@ -5,8 +5,7 @@ Spark Practicals
 
 Start pyspark within ipython notebook: 
 
-    IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.10:1.3.0
-
+	> ./start.sh  
 
 1. WordCount using Apache Spark - open: `WordCount.ipynb`
 2. Averrage Word Length using Apache Spark: open: `AverageWordLength.ipynb`
