@@ -1,11 +1,24 @@
 Spark Practicals
 ====================================
 
-#Pre-requisites:
+#Assigments
+
+Start pyspark within ipython notebook: 
+
+    IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.10:1.3.0
+
+
+1. WordCount using Apache Spark - open: `WordCount.ipynb`
+2. Averrage Word Length using Apache Spark: open: `AverageWordLength.ipynb`
+3. Average Temperature using Apache Spark - open: `NSWAirTempeature.ipynb`
+
+
+
+#Setting up CDH distribution
 
 * CDH 5.8 
 
-#Setting up the environment
+##Setting up the environment
 
 This is somewhat lenghty setup process need to install python2.7 on CentoOS.
 
@@ -56,7 +69,7 @@ Install required packages:
     pip install numpy pandas jupyter
 
 
-#Setting up the data 
+##Setting up the data 
 
 In the `spark-practicals` directory:
 
@@ -70,16 +83,6 @@ _Note: Ingnore the warnings_
 Verify that all the files are in hdfs:
 
 	hdfs dfs -ls spark-data
-
-Start pyspark within ipython notebook: 
-
-	IPYTHON_OPTS="notebook" pyspark --packages com.databricks:spark-csv_2.10:1.3.0
-
-#Assigments
-
-1. WordCount using Apache Spark - open: `WordCount.ipynb`
-2. Averrage Word Length using Apache Spark: open: `AverageWordLength.ipynb`
-3. Average Temperature using Apache Spark - open: `NSWAirTempeature.ipynb`
 
 #More info:
 
