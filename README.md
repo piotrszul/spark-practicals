@@ -5,7 +5,7 @@ Spark Practicals
 
 Start pyspark within ipython notebook: 
 
-	> ./start.sh  
+	./start.sh  
 
 1. WordCount using Apache Spark - open: `WordCount.ipynb`
 2. Averrage Word Length using Apache Spark: open: `AverageWordLength.ipynb`
