@@ -8,10 +8,11 @@ Start pyspark within ipython notebook:
 	./start.sh  
 
 1. WordCount using Apache Spark - open: `WordCount.ipynb`
-2. Averrage Word Length using Apache Spark: open: `AverageWordLength.ipynb`
+2. Average Word Length using Apache Spark: open: `AverageWordLength.ipynb`
 3. Average Temperature using Apache Spark - open: `NSWAirTempeature.ipynb`
 
 
+Note: You need to be connected to the Internet to start the notebook correctly. If that is not the case please use `./start-min.sh`. This will however only allow you to work with examples 1 and 2.
 
 #Setting up CDH distribution
 
@@ -65,7 +66,7 @@ Create and activate python virtual environment named `pyspark`:
 
 Install required packages:
 
-    pip install numpy pandas jupyter
+    pip install numpy pandas jupyter matplotlib
 
 
 ##Setting up the data 
@@ -83,6 +84,24 @@ Verify that all the files are in hdfs:
 
 	hdfs dfs -ls spark-data
 
+
+#Setting up on MacOS (or a Linux)
+
+This are just guidelines rather than detailed step by step instructions.
+
+Install Oracle JDK 1.8 + (on Linux OpenJDK is fine)
+
+Make sure you have python 2.7  and install the following python packages:
+    
+    numpy pandas jupyter matplotlib
+   
+Note: you can use instructions from the CDH setup above (with or without virtual envs)
+
+Download and install Apache Spark 1.6.+ (Pre-build for Hadoop 2.6)
+
+* extract the tarball in a desired location
+* make sure `$SPARK_HOME/bin` is on your `PATH`
+    
 #More info:
 
 Contact: piotr.szul@csiro.au
